@@ -17,7 +17,8 @@ export class AppComponent {
     avatar: 'https://angular.io/assets/images/logos/angular/angular.png',
     search: 'Type something...',
     email: '',
-    password: ''
+    password: '',
+    nickname: ''
   };
   names: string[] = ['Maria', 'Pedro', 'Juan', 'Ana', 'Luis'];
   newName = '';

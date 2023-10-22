@@ -1,3 +1,13 @@
+<h1>Class and Style Binding</h1>
+
+<h2>[class]</h2>
+
+<input type="text" required #inputNickname="ngModel" [(ngModel)]="person.nickname">
+<span class="message-error" [class.error]="inputNickname.invalid">Nickname is required</span>
+
+
+<hr>
+
 <h1>Control Structures</h1>
 
 <h2>*ngIf</h2>
