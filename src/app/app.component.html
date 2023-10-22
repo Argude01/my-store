@@ -2,9 +2,22 @@
 
 <h2>[class]</h2>
 
+<label>Nickname:</label>
 <input type="text" required #inputNickname="ngModel" [(ngModel)]="person.nickname">
 <span class="message-error" [class.error]="inputNickname.invalid">Nickname is required</span>
 
+<label>Username:</label>
+<input type="text" required #inputUsername="ngModel" [(ngModel)]="person.nickname">
+<span [style.font-style]="inputUsername.invalid ? 'italic' : 'normal'">Username is required</span>
+
+<div class="avatar-container">
+  <div>
+    <input type="text" [(ngModel)]="imgWidth">
+  </div>
+  <div>
+    <img [src]="person.avatar" [style.width.%]="imgWidth">
+  </div>
+</div>
 
 <hr>
 

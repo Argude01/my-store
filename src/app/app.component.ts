@@ -7,6 +7,7 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  imgWidth = 20;
   name = 'Auxi';
   age = 26;
   img = 'https://angular.io/assets/images/logos/angular/angular.png';
