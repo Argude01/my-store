@@ -59,7 +59,11 @@ export class AppComponent {
       stock: 5
     }
   ];
-
+  box = {
+    width: 100,
+    height: 100,
+    background: 'yellow'
+  };
   send() {
     console.log('send');
     this.sendButtonDisabled = !this.sendButtonDisabled;
