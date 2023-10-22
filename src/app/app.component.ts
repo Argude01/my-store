@@ -64,6 +64,12 @@ export class AppComponent {
     height: 100,
     background: 'yellow'
   };
+  register = {
+    email: '',
+    password: '',
+    nickname: ''
+  };
+
   send() {
     console.log('send');
     this.sendButtonDisabled = !this.sendButtonDisabled;
@@ -90,5 +96,9 @@ export class AppComponent {
 
   deleteName(index: number){
     this.names.splice(index, 1);
+  }
+
+  signUp() {
+    console.log(this.register);
   }
 }
