@@ -1,3 +1,18 @@
+<h1>ngClass and ngStyle Binding</h1>
+
+<h2>[ngClass]</h2>
+
+<label>Nickname:</label>
+<input type="text" required #inputLastname="ngModel" [(ngModel)]="person.nickname">
+<span class="message-error" [class.error]="inputLastname.invalid">Lastname is required</span>
+
+<hr class="hr--lastname"
+  [ngClass]="{
+    'valid': inputLastname.valid,
+    'invalid': inputLastname.invalid
+  }"
+/>
+
 <h1>Class and Style Binding</h1>
 
 <h2>[class]</h2>
